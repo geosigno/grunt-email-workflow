@@ -125,6 +125,14 @@ Handlebars and Assemble are used for templating.
 {{> button type="primary" align="center" url="LINK GOES HERE" title="ANCHOR TEXT GOES HERE" }}
 ```
 
+### Create a new email
+
+* Create a new email in `/emails/new-project-name.hbs`
+* Dupplicate `/css/scss/dummy/`
+* Rename `dummy` with the name of your project
+* In `/emails/new-project-name.hbs`, fill the name of your css folder into `cssPath` variable
+* in `grunt/sass.js`, add a new line in `files` to add your new project
+
 ### Generate your email templates
 
 In Terminal/command-line, run `grunt`. This will:

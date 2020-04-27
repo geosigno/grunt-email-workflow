@@ -1,6 +1,7 @@
 ---
 layout: default.hbs
-subject: Components Guide
+subject: Email Components
+cssPath: email-components
 ---
 <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
 <table class="main">
@@ -13,7 +14,6 @@ subject: Components Guide
             <p>Hi there,</p>
             <p>
               Here's a quick guide to some of the built in components.<br />
-              Each component has it's own <code>partials/components/&lt;component_name&gt;.hbs</code> file and a corresponding <code>_&lt;component_name&gt;.scss</code> 
             </p>
 
             {{> divider }}
@@ -44,15 +44,6 @@ subject: Components Guide
             </p>
             {{> button type='primary' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (primary)' }}
             {{> button type='secondary' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (secondary)' }}
-
-            {{> divider }}
-
-            <!-- BEGIN CHARTS -->
-            <h2>Charts (<a href="https://image-charts.com/documentation">documentation</a>)</h2>
-            <p>
-              <code>&#123;&#123;&gt; chart width='534' height='200' params='cht=lc&chd=s:cEAELFJHHHKUju9uuXUc&chco=76A4FB&chls=2.0,0.0,0.0&chxt=x,y&chxl=0:|0|1|2|3|4|5|1:|0|50|100&chg=20,50' alt='beautiful chart' &#125;&#125;</code>
-            </p>
-            {{> chart width='534' height='200' params='cht=lc&chd=s:cEAELFJHHHKUju9uuXUc&chco=76A4FB&chls=2.0,0.0,0.0&chxt=x,y&chxl=0:|0|1|2|3|4|5|1:|0|50|100&chg=20,50' alt='beautiful chart' }}
 
             {{> divider }}
 
